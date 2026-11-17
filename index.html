@@ -62,7 +62,7 @@ svg{display:block;overflow:visible}
 /* desafío */
 #desafio canvas{position:absolute;inset:0}
 #desafio .vign{position:absolute;inset:0;background:radial-gradient(ellipse 46% 34% at 50% 50%,rgba(5,11,24,.92) 0%,rgba(5,11,24,.6) 60%,rgba(5,11,24,0) 100%)}
-#desafio .q1{position:absolute;left:220px;right:220px;top:310px;text-align:center;font:800 50px/1.15 Montserrat,Arial}
+#desafio .q1{position:absolute;left:150px;right:150px;top:345px;text-align:center;font:800 52px/1.15 Montserrat,Arial}
 #desafio .q2{position:absolute;left:260px;right:260px;top:470px;text-align:center;font:700 40px/1.25 Montserrat,Arial;color:var(--cyan)}
 #desafio .k{left:0;right:0;text-align:center;top:270px}
 
@@ -71,7 +71,7 @@ svg{display:block;overflow:visible}
 #eco .tag{position:absolute;left:0;right:0;top:88px;text-align:center;color:#8FC6F2;font:400 21px Inter,Arial}
 .spin{animation:spin 40s linear infinite} .spin2{animation:spin 24s linear infinite reverse}
 @keyframes spin{to{transform:rotate(360deg)}}
-.pillars{position:absolute;left:70px;right:70px;top:808px;height:56px;border:1px solid rgba(143,198,242,.3);border-radius:10px;display:flex;align-items:center;justify-content:space-around;color:#DDEBF8;font:600 15px Inter,Arial;letter-spacing:.06em}
+.pillars{position:absolute;left:70px;right:70px;top:818px;height:56px;border:1px solid rgba(143,198,242,.3);border-radius:10px;display:flex;align-items:center;justify-content:space-around;color:#DDEBF8;font:600 15px Inter,Arial;letter-spacing:.06em}
 .pillars span{display:flex;align-items:center;gap:10px}
 .pillars i{width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
 
@@ -108,9 +108,9 @@ svg{display:block;overflow:visible}
 .seg .bar span{position:absolute;left:20px;top:15px;font:800 24px Montserrat,Arial;white-space:nowrap}
 .seg .txt{padding-left:28px;font:400 21px/1.35 Inter,Arial;color:var(--txt)}
 .seg .txt b{color:#fff}
-.chip{position:absolute;top:660px;width:690px;height:150px;padding:26px 32px}
+.chip{position:absolute;top:640px;width:690px;min-height:150px;padding:24px 32px 26px}
 .chip .v{font:900 52px Montserrat,Arial}
-.chip p{font:400 20px/1.35 Inter,Arial;color:var(--txt);margin-top:8px}
+.chip p{font:400 19px/1.4 Inter,Arial;color:var(--txt);margin-top:8px;max-width:620px}
 
 /* testimonio */
 #testimonio .qm{position:absolute;left:110px;top:120px;font:900 340px/1 Montserrat,Arial;color:var(--cyan);opacity:.18}
@@ -185,6 +185,14 @@ svg{display:block;overflow:visible}
 .ben p{font:400 21px/1.38 Inter,Arial;color:var(--txt)}
 .ben p b{color:#fff;font-weight:600}
 
+.airrow{position:absolute;left:90px;top:172px;right:90px;font:700 14px Inter,Arial;letter-spacing:.18em;color:var(--cyan)}
+.airrow .al{display:flex;align-items:baseline;gap:30px;margin-top:8px;letter-spacing:0}
+.airrow b{font:800 28px Montserrat,Arial;color:#fff}
+.airrow span{font:400 16px Inter,Arial;color:var(--dim)}
+.bc{position:absolute;width:690px;height:270px;display:grid;grid-template-columns:270px 1fr;align-items:center;gap:6px;padding:0 30px 0 8px}
+.bc small{font:800 15px Montserrat,Arial;color:var(--pink);letter-spacing:.1em}
+.bc h3{font:800 27px/1.2 Montserrat,Arial;margin:6px 0 10px}
+.bc p{font:400 19px/1.42 Inter,Arial;color:var(--txt)}
 /* hoja de ruta */
 .phs{position:absolute;top:470px;width:330px;margin-left:-165px;padding:22px 24px;min-height:186px}
 .phs small{font:700 15px Inter,Arial;letter-spacing:.16em;color:var(--cyan)}
@@ -246,8 +254,8 @@ svg{display:block;overflow:visible}
   <section class="scene" id="desafio" data-steps="1" data-n="0">
     <canvas id="cv1" width="1600" height="900"></canvas><div class="vign"></div>
     <div class="k rise" data-step="0">EL DESAFÍO</div>
-    <div class="q1 kin" data-step="0">En una exportación participan muchos actores, cada uno con su propia información.</div>
-    <div class="q2 kin" data-step="1">SICEX la reúne en un solo lugar para que todos trabajen con los mismos datos.</div>
+    <div class="q1 kin" data-step="0">Una exportación involucra a muchos actores.</div>
+    <div class="q2 kin" data-step="1">SICEX reúne su información en un solo lugar.</div>
   </section>
 
   <section class="scene" id="eco" data-steps="5" data-n="0">
@@ -284,8 +292,8 @@ svg{display:block;overflow:visible}
   </section>
 
   <section class="scene" id="salmon" data-steps="1" data-n="4">
-    <div class="k">CASO EXPORTACIÓN DE SALMÓN</div>
-    <div class="t">Autorización de Sernapesca previa a la declaración de exportación</div>
+    <div class="k">EJEMPLO DE USO DE SICEX · EXPORTACIÓN DE SALMÓN</div>
+    <div class="t">Autorización previa a la declaración de exportación</div>
     <svg id="clocks" viewBox="0 0 1600 900" width="1600" height="900" style="position:absolute;inset:0"></svg>
     <div class="clab" style="left:480px;top:760px"><small>SIN SICEX</small><div style="color:#B9C6D8">4–20 horas</div></div>
     <div class="clab rise" data-step="1" style="left:1120px;top:760px"><small style="color:var(--pink)">CON SICEX</small><div style="color:var(--pink)">1–2 min</div></div>
@@ -296,11 +304,12 @@ svg{display:block;overflow:visible}
     <div class="k">IMPACTO ECONÓMICO DE SICEX · 2016–2023</div>
     <div class="lead" style="top:100px">Un <b>estudio independiente</b> midió por primera vez el valor que SICEX genera para el país.</div>
     <div id="impHero"><div class="v">US$<span class="count dec" data-to="191.5">0</span> M</div><p>en beneficios sociales generados</p></div>
-    <div class="seg rise" data-step="1" style="top:420px"><div class="bar"><i style="background:linear-gradient(90deg,#1A6FC0,#3FC8F0)" data-w="763"></i><span>US$152,1 M</span></div><div class="txt">por reducción de <b>2 días</b> en el ciclo exportador</div></div>
-    <div class="seg rise" data-step="1" style="top:500px;transition-delay:.15s"><div class="bar"><i style="background:linear-gradient(90deg,#B0204F,#E0336A)" data-w="192"></i><span>US$38,3 M</span></div><div class="txt"><b>433 mil +</b> certificados en papel eliminados</div></div>
+    <div class="seg rise" data-step="1" style="top:405px"><div class="bar"><i style="background:linear-gradient(90deg,#1A6FC0,#3FC8F0)" data-w="763"></i><span>US$152,1 M</span></div><div class="txt">por reducción de <b>2 días</b> en el ciclo exportador</div></div>
+    <div class="seg rise" data-step="1" style="top:478px;transition-delay:.15s"><div class="bar"><i style="background:linear-gradient(90deg,#B0204F,#E0336A)" data-w="192"></i><span>US$38,3 M</span></div><div class="txt"><b>433 mil +</b> certificados en papel eliminados</div></div>
+    <div class="seg rise" data-step="1" style="top:551px;transition-delay:.3s"><div class="bar"><i style="background:#7F93AE" data-w="6"></i><span>US$1,1 M</span></div><div class="txt">otros beneficios incluidos en el total</div></div>
     <div class="glass chip rise" data-step="2" style="left:90px"><div class="v" style="color:var(--cyan)">TIR 41%</div><p>sobre los estándares de rentabilidad social para proyectos públicos</p></div>
     <div class="glass chip rise" data-step="2" style="left:820px;transition-delay:.15s"><div class="v">US$141,9 M</div><p>de Valor Actual Neto (VAN)</p></div>
-    <div class="src">Fuente: Estudio de impacto económico de SICEX, período 2016–2023, presentado el 19 de enero de 2026. Barras proporcionales al total.</div>
+    <div class="src">Fuente: Estudio de impacto económico de SICEX, período 2016–2023, presentado el 19 de enero de 2026. Barras proporcionales al total de US$191,5 M.</div>
   </section>
 
   <section class="scene" id="testimonio" data-steps="0" data-n="0">
@@ -319,8 +328,8 @@ svg{display:block;overflow:visible}
   </section>
 
   <section class="scene" id="recorrido" data-steps="9" data-n="7">
-    <div class="k">PASO A PASO</div>
-    <div class="t">Las fricciones que elimina SICEX en una exportación aérea</div>
+    <div class="k">RECORRIDO DE LA EXPORTACIÓN AÉREA</div>
+    <div class="t">Etapas del proceso y fricciones que SICEX resuelve</div>
     <div class="legend">
       <div><i style="background:#3FC8F0;box-shadow:0 0 10px #3FC8F0"></i>En operación o certificado</div>
       <div><i style="background:var(--pink)"></i>En certificación</div>
@@ -361,9 +370,8 @@ svg{display:block;overflow:visible}
   <section class="scene" id="benef" data-steps="4" data-n="8">
     <div class="k">AEROLÍNEAS Y AGENTES DE CARGA</div>
     <div class="t">Beneficios para la industria aérea</div>
-    <svg id="globe" viewBox="0 0 1600 900" width="1600" height="900" style="position:absolute;inset:0"></svg>
-    <div class="airl"><small>YA TRANSMITEN LA MASTER AWB VÍA SICEX</small><div class="names">LATAM · Sky Airline<br>Korean Air · Aeroméxico</div><div class="rep">Korean Air y Aeroméxico, representadas en Chile por Pacific Feeder</div></div>
-    <div id="bens"></div>
+    <div class="airrow">YA TRANSMITEN LA MASTER AWB VÍA SICEX<div class="al"><b>LATAM</b><b>Sky Airline</b><b>Korean Air</b><b>Aeroméxico</b><span>Korean Air y Aeroméxico, representadas en Chile por Pacific Feeder</span></div></div>
+    <div id="bcards"></div>
   </section>
 
   <section class="scene" id="ruta" data-steps="1" data-n="9">
@@ -400,39 +408,6 @@ svg{display:block;overflow:visible}
 <div id="notes"><b id="nh"></b><div id="nt"></div></div>
 <div id="ctrl"><button id="bPrev" aria-label="Anterior">←</button><button id="bNext" aria-label="Siguiente">→</button><button id="bNotes">Notas (N)</button><button id="bFull">Pantalla completa</button></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script>
-/* Simplified continent outlines [lon, lat], drawn by hand for a stylized globe. */
-window.LAND_RINGS=[
- /* South America */
- [[-80,-2],[-81,-6],[-76,-14],[-71,-18],[-70,-24],[-71,-30],[-72,-37],[-74,-43],[-75,-50],[-72,-54],[-68,-55],[-65,-55],[-68,-50],[-66,-46],[-65,-41],[-62,-39],[-57,-37],[-58,-34],[-53,-33],[-48,-26],[-44,-23],[-40,-21],[-39,-15],[-35,-9],[-35,-5],[-41,-3],[-48,-1],[-51,4],[-55,6],[-60,8],[-64,10],[-71,12],[-75,11],[-77,8],[-79,1],[-80,-2]],
- /* North and Central America */
- [[-77,8],[-80,9],[-83,9],[-86,12],[-88,14],[-92,15],[-95,16],[-97,16],[-101,17],[-105,20],[-109,24],[-112,29],[-115,30],[-117,32],[-121,36],[-124,40],[-124,46],[-124,48],[-127,51],[-131,55],[-136,58],[-141,60],[-147,61],[-152,59],[-158,57],[-163,55],[-158,58],[-162,60],[-165,62],[-165,66],[-162,67],[-156,71],[-148,70],[-140,69],[-130,70],[-120,69],[-110,68],[-95,68],[-86,68],[-82,64],[-90,60],[-94,58],[-90,57],[-82,55],[-79,52],[-78,57],[-77,61],[-72,61],[-65,60],[-61,56],[-56,52],[-59,48],[-65,45],[-70,43],[-70,41],[-74,40],[-76,37],[-76,35],[-80,32],[-81,30],[-80,26],[-81,25],[-83,29],[-85,30],[-89,30],[-94,29],[-97,27],[-97,22],[-95,19],[-91,19],[-90,21],[-87,21],[-88,16],[-84,15],[-83,11],[-80,9],[-77,8]],
- /* Greenland */
- [[-45,60],[-40,65],[-22,70],[-20,77],[-30,83],[-55,82],[-70,78],[-58,75],[-53,70],[-50,64],[-45,60]],
- /* Eurasia */
- [[-9,37],[-9,43],[-2,44],[-1,46],[-4,48],[2,51],[5,53],[8,54],[8,57],[5,59],[5,62],[10,64],[15,68],[20,70],[28,71],[33,69],[41,67],[44,68],[54,68],[60,69],[69,73],[80,73],[90,76],[105,78],[113,74],[130,71],[140,72],[160,70],[170,70],[180,69],[178,65],[170,60],[163,59],[162,55],[156,51],[157,57],[160,61],[155,59],[143,59],[137,54],[141,52],[140,48],[135,43],[130,42],[129,36],[126,35],[126,38],[125,40],[121,40],[122,37],[119,35],[121,32],[122,30],[120,26],[117,23],[113,22],[110,21],[108,22],[106,20],[109,15],[109,11],[105,9],[103,11],[100,13],[100,8],[101,3],[104,1],[103,3],[100,6],[98,8],[98,16],[94,17],[92,22],[88,22],[85,20],[80,15],[80,10],[77,8],[73,16],[73,21],[70,23],[67,25],[62,25],[57,26],[56,27],[52,28],[49,30],[48,30],[50,26],[52,24],[56,24],[56,26],[59,23],[57,19],[52,16],[45,13],[43,13],[39,21],[35,28],[34,28],[32,31],[35,33],[36,36],[30,36],[27,37],[26,40],[29,41],[28,42],[28,44],[30,46],[33,45],[36,47],[39,47],[41,42],[36,41],[34,42],[30,41],[26,40],[24,38],[22,37],[21,39],[19,42],[15,45],[13,45],[12,44],[16,41],[16,38],[15,40],[12,42],[10,44],[8,44],[3,43],[3,42],[0,40],[-1,37],[-5,36],[-9,37]],
- /* Africa */
- [[-17,15],[-17,21],[-13,27],[-10,30],[-6,35],[0,36],[10,37],[11,33],[20,31],[25,32],[32,31],[34,28],[37,22],[39,16],[43,12],[51,12],[48,5],[42,-1],[40,-6],[40,-11],[40,-16],[35,-24],[33,-26],[31,-29],[27,-34],[20,-35],[18,-32],[15,-27],[12,-18],[13,-12],[12,-5],[9,-1],[9,4],[5,6],[0,5],[-5,5],[-8,4],[-11,7],[-13,9],[-16,12],[-17,15]],
- /* Australia */
- [[114,-22],[114,-26],[115,-34],[118,-35],[123,-34],[129,-32],[132,-32],[135,-35],[138,-35],[140,-38],[144,-38],[147,-39],[150,-37],[153,-31],[153,-25],[150,-22],[146,-19],[145,-15],[142,-11],[141,-17],[136,-15],[137,-12],[132,-11],[129,-15],[126,-14],[122,-18],[118,-20],[114,-22]],
- /* Japan */
- [[130,31],[131,34],[135,34],[140,35],[141,38],[142,40],[140,42],[143,43],[145,44],[141,45],[140,42],[139,40],[136,36],[132,35],[130,33],[130,31]],
- /* Great Britain */
- [[-5,50],[1,51],[2,53],[-1,55],[-2,57],[-3,59],[-6,58],[-5,55],[-3,54],[-5,52],[-5,50]],
- /* Sumatra */
- [[95,5],[98,4],[104,-2],[106,-6],[101,-3],[95,5]],
- /* Borneo */
- [[109,2],[110,-2],[114,-4],[116,-3],[118,1],[119,5],[116,7],[113,3],[109,2]],
- /* New Guinea */
- [[131,-1],[138,-2],[141,-3],[146,-6],[150,-10],[143,-9],[138,-8],[135,-4],[131,-1]],
- /* New Zealand */
- [[172,-34],[175,-37],[178,-38],[175,-41],[172,-41],[167,-46],[170,-46],[174,-41],[172,-34]],
- /* Madagascar */
- [[44,-25],[47,-25],[50,-15],[49,-12],[44,-17],[44,-25]]
-];
-
-</script>
 <script>
 const NOTES={
 1:"BARBARA (10:40 – 10:41). Agradecer a IATA por la invitación. Presentarse y presentar a Carlos Mancilla, Encargado de Logística de SICEX. Anunciar la estructura: el rol del Estado como facilitador a través de SICEX, lo que ya logramos en exportación marítima y cómo llevamos ese modelo al aeropuerto.",
@@ -519,10 +494,12 @@ const D1=(function(){
      ['Comisión Chilena|del Cobre',500,225,'b'],['Servicio de|Impuestos Internos',530,345,'b'],['Registro Civil e|Identificación',500,465,'b'],['Tesorería General|de la República',530,585,'b'],['DIRECTEMAR',480,690,'b']]},
    {k:2,c:'#F5A524',h:['PUERTOS, TERMINALES Y OTRAS ENTIDADES',1540,150,'end'],n:[
      ['Puerto Antofagasta',1290,190,'r'],['Puerto Angamos',1290,268,'r'],['Puerto Valparaíso',1290,346,'r'],['Puerto Coronel',1290,424,'r'],['Puerto Talcahuano',1290,502,'r'],['DP World Lirquén',1290,580,'r'],['San Vicente Terminal|Internacional',1290,658,'r'],['Correos de Chile',1290,736,'r']]},
-   {k:3,c:'#A98BFF',h:['VUCES INTERNACIONALES · ALIANZA DEL PACÍFICO Y URUGUAY',800,664,'middle'],n:[
-     ['Colombia',610,712,'b'],['México',735,722,'b'],['Perú',865,722,'b'],['Uruguay',990,712,'b']]},
-   {k:4,c:'#49D17D',h:['CARGA AÉREA · MASTER AWB',800,166,'middle'],n:[
-     ['LATAM',640,212,'b'],['Sky',747,222,'b'],['Korean Air',853,222,'b'],['Aeroméxico',960,212,'b']]}
+   {k:3,c:'#A98BFF',h:['VUCES INTERNACIONALES · ALIANZA DEL PACÍFICO Y URUGUAY',800,782,'middle'],n:[
+     ['Colombia',610,680,'b'],['México',735,694,'b'],['Perú',865,694,'b'],['Uruguay',990,680,'b']]},
+   {k:4,c:'#49D17D',h:['CARGA AÉREA · MASTER AWB',750,162,'middle'],n:[
+     ['LATAM',615,206,'b'],['Sky',705,220,'b'],['Korean Air',795,220,'b'],['Aeroméxico',885,206,'b']]},
+   {k:2,c:'#F5A524',h:['COMUNIDADES LOGÍSTICAS',1090,412,'middle'],n:[
+     ['Comunidades|logísticas',1045,236,'b'],['Port Community|Systems (PCS)',1135,322,'b']]}
   ];
   let out=`<defs><filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <radialGradient id="hubg"><stop offset="0" stop-color="#14427F"/><stop offset="1" stop-color="#0A2247"/></radialGradient></defs>`;
@@ -537,9 +514,9 @@ const D1=(function(){
       if(pos==='l'){tx=x-32;anc='end';ty=y+6-(L.length-1)*9;} if(pos==='r'){tx=x+32;anc='start';ty=y+6-(L.length-1)*9;} if(pos==='b'){ty=y+42;}
       const t=L.map((s,j)=>`<tspan x="${tx}" dy="${j?18:0}">${s}</tspan>`).join('');
       nodes+=`<circle cx="${x}" cy="${y}" r="19" fill="#0B1F42" stroke="${g.c}" stroke-width="2.5" filter="url(#glow)"/><circle cx="${x}" cy="${y}" r="6" fill="${g.c}"/>
-        <text x="${tx}" y="${ty}" text-anchor="${anc}" font-family="Inter,Arial" font-size="15.5" fill="#DCE8F5">${t}</text>`;
+        <text x="${tx}" y="${ty}" text-anchor="${anc}" font-family="Inter,Arial" font-size="15.5" fill="#DCE8F5" stroke="#071329" stroke-width="6" paint-order="stroke" stroke-linejoin="round">${t}</text>`;
     });
-    out+=`<g data-step="${g.k}">${lines}${mesh}${pulses}${nodes}<text x="${g.h[1]}" y="${g.h[2]}" text-anchor="${g.h[3]}" font-family="Inter,Arial" font-weight="700" font-size="15" letter-spacing="1.6" fill="${g.c}">${g.h[0]}</text></g>`;
+    out+=`<g data-step="${g.k}">${lines}${mesh}${pulses}${nodes}<text x="${g.h[1]}" y="${g.h[2]}" text-anchor="${g.h[3]}" font-family="Inter,Arial" font-weight="700" font-size="15" letter-spacing="1.6" fill="${g.c}" stroke="#071329" stroke-width="8" paint-order="stroke" stroke-linejoin="round">${g.h[0]}</text></g>`;
   });
   out+=`<g transform="translate(${cx} ${cy})"><g class="spin"><circle r="150" fill="none" stroke="#3FC8F0" stroke-opacity=".55" stroke-width="2" stroke-dasharray="2 10"/></g>
    <g class="spin2"><circle r="134" fill="none" stroke="#7FC3F0" stroke-opacity=".35" stroke-width="1" stroke-dasharray="40 14"/></g></g>
@@ -678,41 +655,42 @@ function setFric(i){const fr=$('#fric');if(!i){fr.style.opacity=0;return;}fr.sty
 })();
 function evs(on){document.querySelectorAll('#trazab .ev').forEach(e=>e.classList.toggle('on',on));$('#evline').classList.toggle('on',on);}
 
-/* ================= BENEFICIOS + GLOBE ================= */
+/* ================= BENEFICIOS ================= */
 (function(){
-  const ic=[
-   `<svg width="54" height="54" viewBox="0 0 64 64"><rect x="6" y="14" width="30" height="36" rx="3" fill="none" stroke="#3FC8F0" stroke-width="3"/><path d="M36 32 H58 M50 24 L58 32 L50 40" fill="none" stroke="#3FC8F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 24 H30 M12 32 H30 M12 40 H24" stroke="#3FC8F0" stroke-width="2.5"/></svg>`,
-   `<svg width="54" height="54" viewBox="0 0 64 64"><path d="M8 22 H50 M42 14 L50 22 L42 30" fill="none" stroke="#3FC8F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M56 42 H14 M22 34 L14 42 L22 50" fill="none" stroke="#E0336A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
-   `<svg width="54" height="54" viewBox="0 0 64 64"><rect x="22" y="6" width="22" height="16" rx="2" fill="none" stroke="#3FC8F0" stroke-width="3"/><rect x="6" y="42" width="20" height="16" rx="2" fill="none" stroke="#3FC8F0" stroke-width="3"/><rect x="40" y="42" width="20" height="16" rx="2" fill="none" stroke="#3FC8F0" stroke-width="3"/><path d="M33 22 V32 M16 42 V32 H50 V42" fill="none" stroke="#3FC8F0" stroke-width="3"/></svg>`,
-   `<svg width="54" height="54" viewBox="0 0 64 64"><g transform="translate(30 32) rotate(45) scale(.42)"><path d="${PLANE}" fill="#3FC8F0"/></g><circle cx="48" cy="48" r="11" fill="#0A1834" stroke="#E0336A" stroke-width="3"/><path d="M43 48 L47 52 L53 44" fill="none" stroke="#E0336A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`];
-  const T=['<b>Transmisión única</b> desde sus propios sistemas, en estándar IATA, sin ingreso manual en formularios.','<b>Respuesta en el mismo estándar IATA</b>, que se integra directamente a sus sistemas.','<b>Trazabilidad de sus guías:</b> creación, modificación, aclaración y anulación, con las House vinculadas a su Master.','<b>Menos carga fuera del vuelo programado</b>, con las autorizaciones de los servicios públicos en línea.'];
-  $('#bens').innerHTML=T.map((t,i)=>`<div class="ben rise" data-step="${i+1}" style="top:${385+i*112}px">${ic[i]}<p>${t}</p></div>`).join('');
+  const box=(x,y,w,h,t,c)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="#0B1F42" stroke="${c}" stroke-width="2.5"/><text x="${x+w/2}" y="${y+h/2+5}" text-anchor="middle" font-family="Inter,Arial" font-weight="700" font-size="14" fill="#fff">${t}</text>`;
+  const pkt=(c)=>`<g><rect x="-11" y="-8" width="22" height="16" rx="2" fill="#0B1F42" stroke="${c}" stroke-width="2.5"/><path d="M-11 -8 L0 1 L11 -8" fill="none" stroke="${c}" stroke-width="2"/></g>`;
+  const I=[
+   // 1 transmisión única
+   `<g opacity=".55">${[0,1,2].map(k=>`<g transform="translate(${18+k*10} ${18+k*8})"><rect width="58" height="40" rx="3" fill="#0B1F42" stroke="#7F93AE" stroke-width="1.5"/><path d="M8 12 H48 M8 20 H40 M8 28 H44" stroke="#7F93AE" stroke-width="1.5"/></g>`).join('')}<path d="M22 22 L94 82 M94 22 L22 82" stroke="#E0336A" stroke-width="3"/></g>
+    ${box(12,118,96,52,'Su sistema','#3FC8F0')}${box(160,118,90,52,'SICEX','#3FC8F0')}
+    <path d="M108 144 H160" stroke="#3FC8F0" stroke-width="2" stroke-dasharray="4 5"/>
+    <g><animateMotion dur="1.8s" repeatCount="indefinite" path="M110 144 H158"/>${pkt('#3FC8F0')}</g>`,
+   // 2 respuesta IATA
+   `${box(10,74,96,52,'Su sistema','#3FC8F0')}${box(160,74,90,52,'SICEX','#3FC8F0')}
+    <path d="M106 88 C 130 50, 140 50, 160 88" fill="none" stroke="#3FC8F0" stroke-width="2" stroke-dasharray="4 5"/>
+    <path d="M160 112 C 140 150, 130 150, 106 112" fill="none" stroke="#E0336A" stroke-width="2" stroke-dasharray="4 5"/>
+    <g><animateMotion dur="2.4s" repeatCount="indefinite" path="M106 88 C 130 50, 140 50, 160 88"/>${pkt('#3FC8F0')}</g>
+    <g><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M160 112 C 140 150, 130 150, 106 112"/>${pkt('#E0336A')}</g>
+    <text x="133" y="44" text-anchor="middle" font-family="Inter,Arial" font-size="12" font-weight="700" fill="#3FC8F0">GUÍA · IATA</text>
+    <text x="133" y="170" text-anchor="middle" font-family="Inter,Arial" font-size="12" font-weight="700" fill="#E0336A">RESPUESTA · IATA</text>`,
+   // 3 trazabilidad
+   `<path d="M130 54 L50 132 M130 54 L130 132 M130 54 L210 132" stroke="#3FC8F0" stroke-opacity=".6" stroke-width="2"/>
+    ${box(88,20,84,36,'Master','#3FC8F0')}${[50,130,210].map(x=>box(x-34,132,68,32,'House','#7FC3F0')).join('')}
+    <rect x="70" y="80" width="120" height="26" rx="13" fill="#E0336A"/>
+    ${['Creación','Modificación','Aclaración','Anulación'].map((w,i)=>`<text x="130" y="98" text-anchor="middle" font-family="Inter,Arial" font-size="13" font-weight="700" fill="#fff" opacity="${i?0:1}">${w}<animate attributeName="opacity" values="1;0;0" keyTimes="0;.25;1" calcMode="discrete" dur="6s" begin="${i*1.5}s" repeatCount="indefinite"/></text>`).join('')}`,
+   // 4 menos carga fuera del vuelo
+   `<g transform="translate(196 92) rotate(-90) scale(.9)"><path d="${PLANE}" fill="#0B1F42" stroke="#3FC8F0" stroke-width="3"/></g>
+    <path d="M10 150 H150" stroke="#7F93AE" stroke-width="3"/>
+    ${[0,1,2].map(k=>`<g><animateMotion dur="2.7s" begin="${k*.9}s" repeatCount="indefinite" path="M14 136 H120 L160 100"/><rect x="-12" y="-12" width="24" height="24" rx="3" fill="#E0336A"/><path d="M-12 -3 H12 M0 -12 V-3" stroke="#fff" stroke-width="2"/></g>`).join('')}
+    <circle cx="214" cy="160" r="15" fill="#49D17D"/><path d="M206 160 L212 166 L222 154" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`];
+  const T=[['Transmisión única','Desde sus propios sistemas, en estándar IATA, sin ingreso manual en formularios.'],
+   ['Respuesta en estándar IATA','La respuesta de SICEX se integra directamente a sus sistemas.'],
+   ['Trazabilidad de las guías','Creación, modificación, aclaración y anulación, con las House vinculadas a su Master.'],
+   ['Menos carga fuera del vuelo','Con las autorizaciones de los servicios públicos en línea.']];
+  const P=[[90,282],[820,282],[90,578],[820,578]];
+  $('#bcards').innerHTML=T.map((t,i)=>`<div class="glass bc rise" data-step="${i+1}" style="left:${P[i][0]}px;top:${P[i][1]}px"><svg viewBox="0 0 260 190" width="260" height="190">${I[i]}</svg><div><small>0${i+1}</small><h3>${t[0]}</h3><p>${t[1]}</p></div></div>`).join('');
 })();
-const GL=(function(){
-  const svg=$('#globe');let ok=false,land=null,proj,path,grat,t0=0;
-  const SCL=[-70.79,-33.39],MEX=[-99.07,19.44],ICN=[126.45,37.46];
-  function init(){if(!window.d3||!window.LAND_RINGS)return;
-    Promise.resolve(window.LAND_RINGS).then(R=>{land={type:'GeometryCollection',geometries:R.map(r=>{const g={type:'Polygon',coordinates:[r]};if(d3.geoArea(g)>2*Math.PI)g.coordinates=[r.slice().reverse()];return g;})};
-      proj=d3.geoOrthographic().scale(300).translate([450,540]).clipAngle(90).precision(.5);path=d3.geoPath(proj);grat=d3.geoGraticule10();
-      svg.innerHTML=`<defs><radialGradient id="sph" cx="38%" cy="32%"><stop offset="0" stop-color="#16407A"/><stop offset=".7" stop-color="#0A2247"/><stop offset="1" stop-color="#061631"/></radialGradient>
-        <filter id="g9" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter><filter id="g9b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-        <circle cx="450" cy="540" r="312" fill="#3FC8F0" opacity=".18" filter="url(#g9)"/><path id="gs" fill="url(#sph)" stroke="#3FC8F0" stroke-opacity=".5" stroke-width="1.5"/><path id="gg" fill="none" stroke="#7FC3F0" stroke-opacity=".12"/>
-        <path id="gl" fill="#1E5C9E" fill-opacity=".85" stroke="#7FC3F0" stroke-opacity=".5" stroke-width=".8"/>
-        <path id="a1" fill="none" stroke="#E0336A" stroke-width="4" stroke-linecap="round" filter="url(#g9b)"/><path id="a2" fill="none" stroke="#3FC8F0" stroke-width="4" stroke-linecap="round" filter="url(#g9b)"/><g id="pts"></g>`;
-      ok=true;t0=performance.now()-9000;frame(performance.now());}).catch(()=>{});}
-  const partial=(a,b,k)=>{const ip=d3.geoInterpolate(a,b),n=64,c=[];for(let i=0;i<=n*k;i++)c.push(ip(i/n));if(c.length<2)c.push(ip(.001));return{type:'LineString',coordinates:c};};
-  const vis=p=>{const r=proj.rotate();return d3.geoDistance(p,[-r[0],-r[1]])<Math.PI/2-.02;};
-  function frame(t){if(!ok)return;const e=Math.min(30,(t-t0)/1000);
-    const k1=Math.min(1,Math.max(0,(e-.6)/1.6)),k2=Math.min(1,Math.max(0,(e-2.4)/2.6)),m=ease(Math.min(1,Math.max(0,(e-2.2)/3.4)));
-    const lon=-72-m*88-Math.max(0,e-5.6)*2.5,lat=-6+m*10;proj.rotate([-lon,-lat]);
-    $('#gs').setAttribute('d',path({type:'Sphere'}));$('#gg').setAttribute('d',path(grat));$('#gl').setAttribute('d',path(land));
-    $('#a1').setAttribute('d',k1>0?path(partial(SCL,MEX,k1))||'':'');$('#a2').setAttribute('d',k2>0?path(partial(SCL,ICN,k2))||'':'');
-    const P=[[SCL,'LATAM · Sky','#fff',1],[MEX,'Aeroméxico','#E0336A',k1],[ICN,'Korean Air','#3FC8F0',k2]];
-    $('#pts').innerHTML=P.filter(p=>p[3]>=1&&vis(p[0])).map(([c,l,col])=>{const [x,y]=proj(c);
-      return `<circle cx="${x}" cy="${y}" r="7" fill="${col}"/><circle cx="${x}" cy="${y}" r="16" fill="none" stroke="${col}" stroke-width="2" opacity=".6"/><text x="${x+20}" y="${y+6}" font-family="Inter,Arial" font-weight="700" font-size="20" fill="${col}" style="paint-order:stroke" stroke="#050B18" stroke-width="5">${l}</text>`;}).join('');}
-  return{init,start(){t0=performance.now();},settle(){t0=performance.now()-9000;frame(performance.now());},frame};
-})();
-GL.init();
+const GL={init(){},start(){},settle(){},frame(){}};
 
 /* ================= HOJA DE RUTA ================= */
 const PH_X=[240,613,986,1360];
